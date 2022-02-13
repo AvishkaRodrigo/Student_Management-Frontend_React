@@ -1,0 +1,18 @@
+.btn-customized {
+    border-color: #008272;
+    width: auto;
+    font-weight: 700;
+    border-width: 5px;
+}
+.btn-customized:hover {
+    background-color: #008272;
+    border-color: #008272;
+}
+.submitbtnarea {
+    display: flex;
+    justify-content: center;
+    /* background-color: #008272; */
+}
+label {
+    color: #818181;
+}

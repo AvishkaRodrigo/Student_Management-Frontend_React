@@ -1,0 +1,52 @@
+.navbar {
+    background-color:#008272;
+    opacity: 90%;
+    
+    
+}
+
+.form-check-input{
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(41, 41, 41);
+    box-shadow: none;
+    
+    /* display: none; */
+}
+.form-check-input:checked{
+    border-color: whitesmoke;
+    background-color: rgb(235, 252, 0);
+    box-shadow: none;
+    /* display: none; */
+}
+  
+.form-check-input:hover{
+    box-shadow: none;
+    /* display: none; */
+}
+.form-check-input-circle{
+    display: none;
+}
+
+.nav-item-teacherList {
+    font-weight: 700;
+    color: black;
+}
+
+.nav-item-myclassList {
+    display: none;
+}
+
+.btn-search {
+    margin-right: 100px;
+}
+.btn-customized2 {
+    border-color: #02352f;
+    color: #02352f;
+    border-width: 2px;
+    font-weight: 600;
+    /* opacity: 100%; */
+}
+.btn-customized2:hover {
+    background-color: #02352f;
+    color: aliceblue;
+}
