@@ -1,14 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './css/registrationform.css';
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+
 (function () {
     'use strict'
   
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+   
     var forms = document.querySelectorAll('.needs-validation')
   
-    // Loop over them and prevent submission
+
     Array.prototype.slice.call(forms)
       .forEach(function (form) {
         form.addEventListener('submit', function (event) {
@@ -22,12 +22,14 @@ import './css/registrationform.css';
       })
   })()
 
+
 const RegistrationForm = () => {
     return ( 
         <div className="content-form">
             <div className="container-xxl">
-                <form action="" method="" className="needs-validation" noValidate>
-                                                                                                {/* method post */}
+
+                <form action="#" onSubmit={loginClick} method="" className="needs-validation" noValidate>
+                                                                            {/* method post */}
                     <div className="row mt-5 mx-2">
                         <p className='text-center display-6 text-success'>Student Details</p>
                         
@@ -51,7 +53,9 @@ const RegistrationForm = () => {
                             <label htmlFor="floatingInput">Birth Date</label>
                         </div>
                         <div className="form-floating mb-3 col-sm-12 col-md-6 ">
-                            <input type="text" className="form-control" id="stuschool"  required/>
+
+                            <input type="text" className="form-control" id="stuschool" placeholder=" " required/>
+
                             <label htmlFor="floatingInput">School</label>
                         </div>
                         <div className="form-floating mb-3 col-sm-12 col-md-6 ">
@@ -60,7 +64,9 @@ const RegistrationForm = () => {
                         </div>
                         
                         
-                        <hr></hr>
+
+                        <hr className='py-1'></hr>
+
 
                         <p className='text-center display-6 text-success'>Gurdian Details</p>
 
@@ -85,16 +91,21 @@ const RegistrationForm = () => {
                             <label htmlFor="floatingInput">Gurdian Email</label>
                         </div>
                         <div className="form-floating mb-3 col-sm-12 col-md-6 ">
-                            <input type="number" className="form-control" id="stumobile" placeholder=" " required/>
+
+                            <input type="number" className="form-control" id="gutmobile" placeholder=" " required/>
                             <label htmlFor="floatingInput">Mobile Number</label>
                         </div>
                         <div className="form-floating mb-3 col-sm-12 col-md-6 ">
-                            <input type="textarea" className="form-control" id="stumobile" placeholder=" " required/>
-                            <label htmlFor="floatingInput">Mobile Number</label>
+                            <input type="text" className="form-control" id="stuaddress" placeholder=" " required/>
+                            <label htmlFor="floatingInput">Address</label>
                         </div>
 
-                        <div className="col-12">
-                            <button className="btn btn-outline-success btn-customized align-middle" type="submit">Submit form</button>
+                        <div className="col-md-12 submitbtnarea">
+                            <button className="btn btn-outline-success btn-customized" type="submit">Submit form</button>
+                        </div>
+                        <div>
+                            <p><br/><br/><br/>df</p>
+
                         </div>
                     </div>
                 </form>

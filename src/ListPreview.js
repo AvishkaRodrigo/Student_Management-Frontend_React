@@ -59,7 +59,9 @@ const ListPreview = (props) => {
 
           ))}
             <div>
-              footer<br/>sd
+
+            <br/><br/>
+
             </div>
           </div>
         </div>  
