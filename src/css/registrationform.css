@@ -1,6 +1,7 @@
 .btn-customized {
     border-color: #008272;
     width: auto;
+
     font-weight: 700;
     border-width: 5px;
 }
@@ -15,4 +16,3 @@
 }
 label {
     color: #818181;
-}

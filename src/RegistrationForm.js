@@ -4,29 +4,32 @@ import './css/registrationform.css';
 
 (function () {
     'use strict'
+  
+   
     var forms = document.querySelectorAll('.needs-validation')
+  
 
-    Array.prototype.slice.call(forms).forEach(function (form) {
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
         form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-            }
-        form.classList.add('was-validated')
-        }, {loginClick})
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
       })
-})()
+  })()
 
-const loginClick = () => {
-    // alert("hi")
-  }
 
 const RegistrationForm = () => {
     return ( 
         <div className="content-form">
             <div className="container-xxl">
+
                 <form action="#" onSubmit={loginClick} method="" className="needs-validation" noValidate>
-                                                                                                {/* method post */}
+                                                                            {/* method post */}
                     <div className="row mt-5 mx-2">
                         <p className='text-center display-6 text-success'>Student Details</p>
                         
@@ -50,7 +53,9 @@ const RegistrationForm = () => {
                             <label htmlFor="floatingInput">Birth Date</label>
                         </div>
                         <div className="form-floating mb-3 col-sm-12 col-md-6 ">
+
                             <input type="text" className="form-control" id="stuschool" placeholder=" " required/>
+
                             <label htmlFor="floatingInput">School</label>
                         </div>
                         <div className="form-floating mb-3 col-sm-12 col-md-6 ">
@@ -59,7 +64,9 @@ const RegistrationForm = () => {
                         </div>
                         
                         
+
                         <hr className='py-1'></hr>
+
 
                         <p className='text-center display-6 text-success'>Gurdian Details</p>
 
@@ -84,6 +91,7 @@ const RegistrationForm = () => {
                             <label htmlFor="floatingInput">Gurdian Email</label>
                         </div>
                         <div className="form-floating mb-3 col-sm-12 col-md-6 ">
+
                             <input type="number" className="form-control" id="gutmobile" placeholder=" " required/>
                             <label htmlFor="floatingInput">Mobile Number</label>
                         </div>
@@ -97,6 +105,7 @@ const RegistrationForm = () => {
                         </div>
                         <div>
                             <p><br/><br/><br/>df</p>
+
                         </div>
                     </div>
                 </form>
