@@ -28,7 +28,7 @@ const RegistrationForm = () => {
         <div className="content-form">
             <div className="container-xxl">
 
-                <form action="#" onSubmit={loginClick} method="" className="needs-validation" noValidate>
+                <form action="#"  method="" className="needs-validation" noValidate>
                                                                             {/* method post */}
                     <div className="row mt-5 mx-2">
                         <p className='text-center display-6 text-success'>Student Details</p>
