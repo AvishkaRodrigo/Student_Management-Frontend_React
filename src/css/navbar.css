@@ -1,52 +1,35 @@
+.bg-success {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-success-rgb(0, 130, 114)), var(--bs-bg-0)) !important;
+  }
+
 .navbar {
     background-color:#008272;
     opacity: 90%;
-    
-    
 }
 
-.form-check-input{
-    border-color: rgb(255, 255, 255);
-    background-color: rgb(41, 41, 41);
-    box-shadow: none;
-    
-    /* display: none; */
-}
-.form-check-input:checked{
-    border-color: whitesmoke;
-    background-color: rgb(235, 252, 0);
-    box-shadow: none;
-    /* display: none; */
-}
-  
-.form-check-input:hover{
-    box-shadow: none;
-    /* display: none; */
-}
-.form-check-input-circle{
-    display: none;
-}
-
-.nav-item-teacherList {
-    font-weight: 700;
-    color: black;
-}
-
-.nav-item-myclassList {
-    display: none;
-}
-
-.btn-search {
-    margin-right: 100px;
-}
-.btn-customized2 {
-    border-color: #02352f;
-    color: #02352f;
+.nav-item {
+    border-color: #008272;
+    color: #fff;
     border-width: 2px;
     font-weight: 600;
-    /* opacity: 100%; */
 }
-.btn-customized2:hover {
-    background-color: #02352f;
-    color: aliceblue;
+
+.nav-item:hover {
+    background-color: #008272;
+    color: #000000;
+    flood-color: red;
+    border-width: 1px;
+    border-bottom-color:#11ffe3;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
